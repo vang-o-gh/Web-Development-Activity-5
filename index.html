@@ -38,11 +38,48 @@
           <hr>
           <label class="select-action">Select a Action:<br></label>
           <input type="text" id="select-action" name="select-action">
-          <button class="submit" onclick=" ">SUBMIT</button>
+          <button class="submit" onclick="getInput()">SUBMIT</button>
           <textarea class="message-box" readonly id="message"> You Selected: </textarea>
         </div>
       </div>
     </div>
     
+    <script>
+      function getInput(){
+        const fruits = ["APPLE", "BANANA", "CHERRY", "DATE", "ELDERBERRY"];
+        const userInput = parseInt(document.getElementById('select-fruit').value);
+        if (!userInput) {
+          alert("Invalid selection, please choose a number between 1 and 6.");
+          return;
+        }
+        if (isNaN(userInput)) {
+        alert("Please enter a valid number!");
+        return;
+        }
+        switch(userInput) {
+          case 1:
+            document.getElementById('message').value= fruits[0];
+            break;
+          case 2:
+            document.getElementById('message').value= fruits[1];
+            break;
+          case 3:
+            document.getElementById('message').value= fruits[2];
+            break;
+          case 4:
+            document.getElementById('message').value= fruits[3];
+            break;
+          case 5:
+            document.getElementById('message').value= fruits[4];
+            break;
+          case 6:
+            document.getElementById('message').value= "THANK YOU!";
+            break;
+          default:
+            alert("Invalid selection, please choose a number between 1 and 6.");
+        } 
+        document.getElementById('select-fruit').value = "";
+      }
+    </script>
   </body>
 </html>
