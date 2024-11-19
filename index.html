@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 4</title>
+    <link rel="stylesheet" href="activity5.css">
+  </head>
+  <body>
+
+    <div class="selection">
+      <div class="menu-selector">
+        <h1>
+          Menu Selector
+        </h1>
+        <img src="images/fruits.jpg">
+        <div>
+          [1] - Apple<br> [2] - Banana<br> [3] - Cherry<br> [4] - Date<br> [5] - Elderberry<br><br> [6] - Exit
+        </div>
+        <div style="padding-top: 20px;">
+          <hr>
+          <label class="select-fruit">Select a Fruit:<br></label>
+          <input type="text" id="select-fruit" name="select-fruit">
+          <button class="submit" onclick="getInput()">SUBMIT</button>
+          <textarea class="message-box" readonly id="message"> You Selected: </textarea>
+        </div>
+      </div>
+      <div class="library-menu">
+        <h1>
+          Library Menu
+        </h1>
+        <img src="images/library.jpg">
+        <div>
+          [1] - View All Books<br> [2] - Add a New Book<br> [3] - Remove a Book<br><br> [4] - Exit
+        </div>
+        <div style="padding-top: 20px;">
+          <br><br>
+          <hr>
+          <label class="select-action">Select a Action:<br></label>
+          <input type="text" id="select-action" name="select-action">
+          <button class="submit" onclick=" ">SUBMIT</button>
+          <textarea class="message-box" readonly id="message"> You Selected: </textarea>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

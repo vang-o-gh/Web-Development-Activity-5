@@ -1,0 +1,163 @@
+/* Font-face declarations */
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url(fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url(fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url(fonts/NeueMontreal-Light.otf);
+}
+
+body{
+  background: linear-gradient(90deg, #3C4487, #8935CA, #D5539E);
+  margin: 30px 50px 30px 50px;
+}
+
+h1{
+  color: #FCFCFC;
+  background: linear-gradient(90deg, #3C4487, #8935CA, #D5539E);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'NeueMontreal-Bold';
+  font-size: 30px;
+}
+
+h2{
+  font-family: 'NeueMontreal-Light';
+  font-size: 15px;
+  text-align: justify;
+}
+
+p{
+  height: 0;
+}
+
+.menu-selector,
+.library-menu {
+  background: rgb(32, 21, 46);
+  backdrop-filter: blur(100px);
+  color: #FCFCFC;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  border-radius: 20px;
+  font-family: 'NeueMontreal-Regular';
+  letter-spacing: 1px;
+  padding: 20px 50px 40px 50px;
+  margin: 50px;
+}
+
+img{
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FCFCFC;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.selection{
+  display: flex;
+  justify-content: center;
+}
+
+.select-fruit, .select-action {
+  font-family: 'NeueMontreal-Regular';
+  letter-spacing: 1px;
+}
+
+#select-fruit, #select-action {
+  background-color: #FCFCFC;
+  border-style: none;
+  height: 25px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 50%;
+  margin-top: 10px;
+  font-family: "NeueMontreal-Regular";
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.message-box {
+  background: linear-gradient(45deg, #8935CA, #D5539E, #8935CA);
+  border-style: none;
+  color:#FCFCFC;
+  justify-content: center;
+  display: flex;
+  line-height: 100px;
+  text-align: center;
+  place-items: center;
+  height: 100px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 93%;
+  margin-top: 10px;
+  font-family: "NeueMontreal-Bold";
+  padding: 10px;
+  font-size: 20px;
+  resize: none;
+}
+
+.submit{
+  background-color:  #3C4487;
+  color: #FCFCFC;
+  border-style: none;
+  height: 28px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 40%;
+  margin-top: 10px;
+  font-family: "NeueMontreal-Regular";
+  margin-left: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background-color: #D5539E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  body{
+    margin: 20px 20px 20px 20px;
+  }
+
+  .selection{
+    display: inline;
+  }
+
+  .menu-selector,
+  .library-menu {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  #select-fruit{
+    width: 92%;
+  }
+
+  .submit{
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
